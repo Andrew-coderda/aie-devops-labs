@@ -27,4 +27,5 @@ def test_espacos_unicos():
 
 
 def test_combina_acento_url_e_caixa():
+    # Combina remoção de acento, URL e normalização de caixa
     assert limpar("ÓTIMO https://loja.exemplo/p/1 Produto") == "otimo produto"
