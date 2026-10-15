@@ -22,3 +22,10 @@ def test_texto_so_com_emojis():
 
 def test_espacos_unicos():
     assert limpar("  muito    bom  ") == "muito bom"
+
+
+
+
+def test_combina_acento_url_e_caixa():
+    # Combina remoção de acento, URL e normalização de caixa
+    assert limpar("ÓTIMO https://loja.exemplo/p/1 Produto") == "otimo produto"
